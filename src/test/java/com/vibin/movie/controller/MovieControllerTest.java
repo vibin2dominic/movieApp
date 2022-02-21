@@ -17,8 +17,6 @@ class MovieControllerTest {
 
     @Test
     void findAll() throws Exception {
-
-
         
         this.mockMvc.perform(get("/movieplex/movies"))
                     .andExpect(status().isOk());
